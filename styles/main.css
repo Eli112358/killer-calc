@@ -17,3 +17,19 @@
 .input label {
     width: 100%;
 }
+.input:has(.values .optional input:checked) ~ .combinations .entry
+{
+    display: none;
+}
+.input:has(.values .optional ._1:checked) ~ .combinations .entry._1,
+.input:has(.values .optional ._2:checked) ~ .combinations .entry._2,
+.input:has(.values .optional ._3:checked) ~ .combinations .entry._3,
+.input:has(.values .optional ._4:checked) ~ .combinations .entry._4,
+.input:has(.values .optional ._5:checked) ~ .combinations .entry._5,
+.input:has(.values .optional ._6:checked) ~ .combinations .entry._6,
+.input:has(.values .optional ._7:checked) ~ .combinations .entry._7,
+.input:has(.values .optional ._8:checked) ~ .combinations .entry._8,
+.input:has(.values .optional ._9:checked) ~ .combinations .entry._9
+{
+    display: inline;
+}
