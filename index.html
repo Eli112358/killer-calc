@@ -9,6 +9,22 @@
 		<title>Eli112358 - Killer Cage Calculator</title>
 		<link rel="stylesheet" href="styles/theme.css">
 		<link rel="stylesheet" href="styles/main.css">
+		<script>
+			function updateDataValue(ele) {
+				ele.dataset.val = ele.value;
+				let lt = [];
+				let gt = [];
+				for (let i = 3; i < 43; i++) {
+					if (ele.value < i) {
+						lt.push(i);
+					} else {
+						gt.push(i);
+					}
+				}
+				ele.dataset.val_lt = lt.join(" ");
+				ele.dataset.val_gt = gt.join(" ");
+			}
+		</script>
 	</head>
 	<body>
 		<header>
