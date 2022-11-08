@@ -1,3 +1,12 @@
 body {
     font-size: 30px;
 }
+select,
+option {
+    font-size: 30px;
+    background-color: #151515;
+    color: #eaeaea;
+}
+input[type=checkbox] {
+    accent-color: #b5e853;
+}
