@@ -23,6 +23,15 @@
 .input:not(:has(.size ._5:checked)) ~ .combinations .size_5,
 .input:not(:has(.size ._6:checked)) ~ .combinations .size_6,
 .input:not(:has(.size ._7:checked)) ~ .combinations .size_7,
+.input:has(.values .required ._1:checked) ~ .combinations .entry:not(._1),
+.input:has(.values .required ._2:checked) ~ .combinations .entry:not(._2),
+.input:has(.values .required ._3:checked) ~ .combinations .entry:not(._3),
+.input:has(.values .required ._4:checked) ~ .combinations .entry:not(._4),
+.input:has(.values .required ._5:checked) ~ .combinations .entry:not(._5),
+.input:has(.values .required ._6:checked) ~ .combinations .entry:not(._6),
+.input:has(.values .required ._7:checked) ~ .combinations .entry:not(._7),
+.input:has(.values .required ._8:checked) ~ .combinations .entry:not(._8),
+.input:has(.values .required ._9:checked) ~ .combinations .entry:not(._9),
 .input:has(.values .optional input:checked) ~ .combinations .entry
 {
     display: none;
