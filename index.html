@@ -39,20 +39,144 @@
 				<div class="main">
 					<div class="input">
 						<label>Total sum:
+							<select class="min-sum"
+							        data-val="3"
+							        data-val_lt="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42"
+							        onchange="updateDataValue(this)">
+								<option value="3" selected="">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="82">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+							</select>
+							to
+							<select class="max-sum"
+							        data-val="42"
+							        data-val_gt="3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41"
+							        onchange="updateDataValue(this)">
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="82">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42" selected>42</option>
+							</select>
 						</label>
 						<label class="size">
 							Cage size:
+							<label><input type="checkbox" value="2" class="_2" checked>2</label>
+							<label><input type="checkbox" value="3" class="_3" checked>3</label>
+							<label><input type="checkbox" value="4" class="_4" checked>4</label>
+							<label><input type="checkbox" value="5" class="_5" checked>5</label>
+							<label><input type="checkbox" value="6" class="_6" checked>6</label>
+							<label><input type="checkbox" value="7" class="_7" checked>7</label>
 						</label>
 						<div class="values">
 							Values:
 							<label class="required">
 								Required:
+								<label><input type="checkbox" value="1" class="_1">1</label>
+								<label><input type="checkbox" value="2" class="_2">2</label>
+								<label><input type="checkbox" value="3" class="_3">3</label>
+								<label><input type="checkbox" value="4" class="_4">4</label>
+								<label><input type="checkbox" value="5" class="_5">5</label>
+								<label><input type="checkbox" value="6" class="_6">6</label>
+								<label><input type="checkbox" value="7" class="_7">7</label>
+								<label><input type="checkbox" value="8" class="_8">8</label>
+								<label><input type="checkbox" value="9" class="_9">9</label>
 							</label>
 							<label class="forbidden">
 								Forbidden:
+								<label><input type="checkbox" value="1" class="_1">1</label>
+								<label><input type="checkbox" value="2" class="_2">2</label>
+								<label><input type="checkbox" value="3" class="_3">3</label>
+								<label><input type="checkbox" value="4" class="_4">4</label>
+								<label><input type="checkbox" value="5" class="_5">5</label>
+								<label><input type="checkbox" value="6" class="_6">6</label>
+								<label><input type="checkbox" value="7" class="_7">7</label>
+								<label><input type="checkbox" value="8" class="_8">8</label>
+								<label><input type="checkbox" value="9" class="_9">9</label>
 							</label>
 							<label class="optional">
 								Optional:
+								<label><input type="checkbox" value="1" class="_1">1</label>
+								<label><input type="checkbox" value="2" class="_2">2</label>
+								<label><input type="checkbox" value="3" class="_3">3</label>
+								<label><input type="checkbox" value="4" class="_4">4</label>
+								<label><input type="checkbox" value="5" class="_5">5</label>
+								<label><input type="checkbox" value="6" class="_6">6</label>
+								<label><input type="checkbox" value="7" class="_7">7</label>
+								<label><input type="checkbox" value="8" class="_8">8</label>
+								<label><input type="checkbox" value="9" class="_9">9</label>
 							</label>
 						</div>
 					</div>
