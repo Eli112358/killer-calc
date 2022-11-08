@@ -17,6 +17,12 @@
 .input label {
     width: 100%;
 }
+.input:not(:has(.size ._2:checked)) ~ .combinations .size_2,
+.input:not(:has(.size ._3:checked)) ~ .combinations .size_3,
+.input:not(:has(.size ._4:checked)) ~ .combinations .size_4,
+.input:not(:has(.size ._5:checked)) ~ .combinations .size_5,
+.input:not(:has(.size ._6:checked)) ~ .combinations .size_6,
+.input:not(:has(.size ._7:checked)) ~ .combinations .size_7,
 .input:has(.values .optional input:checked) ~ .combinations .entry
 {
     display: none;
