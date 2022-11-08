@@ -11,7 +11,6 @@
 		<link rel="stylesheet" href="styles/main.css">
 		<script>
 			function updateDataValue(ele) {
-				ele.dataset.val = ele.value;
 				let lt = [];
 				let gt = [];
 				for (let i = 3; i < 43; i++) {
@@ -21,8 +20,8 @@
 						gt.push(i);
 					}
 				}
-				ele.dataset.val_lt = lt.join(" ");
-				ele.dataset.val_gt = gt.join(" ");
+				ele.dataset.lt = lt.join(" ");
+				ele.dataset.gt = gt.join(" ");
 			}
 		</script>
 	</head>
@@ -40,8 +39,7 @@
 					<div class="input">
 						<label>Total sum:
 							<select class="min-sum"
-							        data-val="3"
-							        data-val_lt="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42"
+							        data-lt="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42"
 							        onchange="updateDataValue(this)">
 								<option value="3" selected="">3</option>
 								<option value="4">4</option>
@@ -86,8 +84,7 @@
 							</select>
 							to
 							<select class="max-sum"
-							        data-val="42"
-							        data-val_gt="3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41"
+							        data-gt="3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41"
 							        onchange="updateDataValue(this)">
 								<option value="3">3</option>
 								<option value="4">4</option>
