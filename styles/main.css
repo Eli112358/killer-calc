@@ -1,0 +1,19 @@
+.main,
+.combinations,
+.combinations *,
+.input,
+.input .values
+{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.input {
+    flex-direction: column;
+}
+.input .values label {
+    text-indent: 1rem;
+}
+.input label {
+    width: 100%;
+}
