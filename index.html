@@ -14,10 +14,12 @@
 				let lt = [];
 				let gt = [];
 				for (let i = 3; i < 43; i++) {
-					if (ele.value < i) {
-						lt.push(i);
-					} else {
-						gt.push(i);
+					if (ele.value !== i) {
+						if (ele.value < i) {
+							lt.push(i);
+						} else {
+							gt.push(i);
+						}
 					}
 				}
 				ele.dataset.lt = lt.join(" ");
