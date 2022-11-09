@@ -85,7 +85,9 @@
 .input:has(.values .forbidden ._7:checked) ~ .combinations ._7,
 .input:has(.values .forbidden ._8:checked) ~ .combinations ._8,
 .input:has(.values .forbidden ._9:checked) ~ .combinations ._9,
-.input:has(.values .optional input:checked) ~ .combinations .entry
+.input:has(.values .optional input:checked) ~ .combinations .entry,
+.entry input,
+.entry:not(:has(input:checked))
 {
     display: none;
 }
