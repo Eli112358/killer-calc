@@ -4,9 +4,15 @@ body {
 select,
 option {
     font-size: 30px;
-    background-color: #151515;
-    color: #eaeaea;
+    background-color: var(--bg-color-0);
+    color: var(--color-0);
 }
-input[type=checkbox] {
-    accent-color: #b5e853;
+.input label:has(input[type=checkbox]),
+.combinations .entry
+{
+    border: 0.25rem solid var(--color-2);
+    padding: 0.2rem;
+}
+.input label:has(input:checked) {
+    border: 0.25rem solid var(--color-1);
 }

@@ -17,10 +17,6 @@
 .input div {
     width: 100%;
 }
-.combinations .entry
-{
-    border: .25rem solid #444;
-}
 .input:not(:has(.size ._2:checked)) ~ .combinations .size_2,
 .input:not(:has(.size ._3:checked)) ~ .combinations .size_3,
 .input:not(:has(.size ._4:checked)) ~ .combinations .size_4,
@@ -86,7 +82,7 @@
 .input:has(.values #forbidden ._8:checked) ~ .combinations ._8,
 .input:has(.values #forbidden ._9:checked) ~ .combinations ._9,
 .input:has(.values .optional input:checked) ~ .combinations .entry,
-.entry input,
+input[type=checkbox],
 .entry:not(:has(input:checked))
 {
     display: none;
