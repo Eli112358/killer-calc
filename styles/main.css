@@ -11,10 +11,10 @@
 .input {
     flex-direction: column;
 }
-.input .values label {
+.input .values div {
     text-indent: 1rem;
 }
-.input label {
+.input div {
     width: 100%;
 }
 .combinations .entry
