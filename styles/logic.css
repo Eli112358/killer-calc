@@ -64,7 +64,7 @@
 .input:has(.values #forbidden ._9:checked) ~ .combinations ._9,
 .input:has(.values .optional input:checked) ~ .combinations .entry,
 input[type=checkbox],
-.entry:not(:has(input:checked))
+.input:not(:has(.show-hidden input:checked)) ~ .combinations .entry:not(:has(input:checked))
 {
     display: none;
 }

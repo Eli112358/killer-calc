@@ -7,13 +7,12 @@ option {
     background-color: var(--bg-color-0);
     color: var(--color-0);
 }
-.input label:has(input[type=checkbox]),
-.combinations .entry
+label:has(input[type=checkbox])
 {
     border: 0.25rem solid var(--color-2);
     padding: 0.2rem;
 }
-.input label:has(input:checked) {
+label:has(input:checked) {
     border: 0.25rem solid var(--color-1);
 }
 .main,
