@@ -28,7 +28,7 @@ label:has(input:checked) {
 .input {
     flex-direction: column;
 }
-.values > div {
+.values > .toggle-area {
     text-indent: 1rem;
 }
 .size > div,
@@ -41,8 +41,8 @@ label:has(input:checked) {
     width: 100%;
 }
 @media (max-width: 725px) {
-    .size > div:not(.grid-3),
-    .values > div > div:not(.grid-3)
+    .size > .toggle-btn,
+    .values > div > .toggle-btn
     {
         display: block;
     }

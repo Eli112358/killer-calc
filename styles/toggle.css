@@ -1,0 +1,15 @@
+.toggle-btn,
+.toggle-area
+{
+    display: inline;
+}
+@media (max-width: 725px) {
+    .toggle-btn,
+    .toggle-area
+    {
+        display: block;
+    }
+    .toggle-btn:not(:has(input:checked)) ~ .toggle-area {
+        display: none;
+    }
+}
