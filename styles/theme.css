@@ -19,7 +19,7 @@ label:has(input:checked) {
 .combinations,
 .combinations *,
 .input,
-.input .values
+.values
 {
     display: flex;
     gap: 1rem;
@@ -28,7 +28,7 @@ label:has(input:checked) {
 .input {
     flex-direction: column;
 }
-.input .values div {
+.values div {
     text-indent: 1rem;
 }
 .input div {
