@@ -36,9 +36,7 @@ label:has(input:checked) {
 {
     display: inline;
 }
-:is(.input, .values) > div {
-    width: 100%;
-}
+:is(.input, .values) > div,
 .main > p {
     width: 100%;
 }
