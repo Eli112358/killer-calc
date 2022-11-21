@@ -53,4 +53,7 @@ label:has(input:checked) {
         gap: 1rem;
         grid-template-columns: repeat(3, auto);
     }
+    .grid-3 label {
+        max-width: 3rem;
+    }
 }
