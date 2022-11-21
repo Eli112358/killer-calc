@@ -1,25 +1,3 @@
-.main,
-.combinations,
-.combinations *,
-.input,
-.input .values
-{
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-.input {
-    flex-direction: column;
-}
-.input .values div {
-    text-indent: 1rem;
-}
-.input div {
-    width: 100%;
-}
-p {
-    width: 100%;
-}
 .input:not(:has(.size ._2:checked)) ~ .combinations .size_2,
 .input:not(:has(.size ._3:checked)) ~ .combinations .size_3,
 .input:not(:has(.size ._4:checked)) ~ .combinations .size_4,

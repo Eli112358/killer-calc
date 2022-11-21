@@ -16,3 +16,25 @@ option {
 .input label:has(input:checked) {
     border: 0.25rem solid var(--color-1);
 }
+.main,
+.combinations,
+.combinations *,
+.input,
+.input .values
+{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.input {
+    flex-direction: column;
+}
+.input .values div {
+    text-indent: 1rem;
+}
+.input div {
+    width: 100%;
+}
+p {
+    width: 100%;
+}
