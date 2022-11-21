@@ -62,7 +62,7 @@
 .input:has(#forbidden ._7:checked) ~ .combinations ._7,
 .input:has(#forbidden ._8:checked) ~ .combinations ._8,
 .input:has(#forbidden ._9:checked) ~ .combinations ._9,
-.input:has(.optional input:checked) ~ .combinations .entry,
+.input:has(.optional input:checked):not(:has(.show-hidden input:checked)) ~ .combinations .entry,
 input[type=checkbox],
 .input:not(:has(.show-hidden input:checked)) ~ .combinations .entry:not(:has(input:checked))
 {
