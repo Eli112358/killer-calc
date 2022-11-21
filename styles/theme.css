@@ -48,6 +48,7 @@ label:has(input:checked) {
     {
         display: block;
     }
+    /*.input for specificity*/
     .input .grid-3
     {
         display: grid;
