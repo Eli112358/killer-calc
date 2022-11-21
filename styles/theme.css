@@ -28,12 +28,30 @@ label:has(input:checked) {
 .input {
     flex-direction: column;
 }
-.values div {
+.values > div {
     text-indent: 1rem;
 }
-.input div {
+.size > div,
+.values > div > div
+{
+    display: inline;
+}
+:is(.input, .values) > div {
     width: 100%;
 }
-p {
+.main > p {
     width: 100%;
+}
+@media (max-width: 725px) {
+    .size > div:not(.grid-3),
+    .values > div > div:not(.grid-3)
+    {
+        display: block;
+    }
+    .input .grid-3
+    {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, auto);
+    }
 }
