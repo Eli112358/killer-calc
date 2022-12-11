@@ -1,9 +1,4 @@
-.toggle-btn,
-.toggle-area
-{
-    display: inline;
-}
-@media (max-width: 725px) {
+@media (max-width: 738px) {
     .toggle-btn,
     .toggle-area
     {
