@@ -4,6 +4,7 @@
 .input:not(:has(.size ._5:checked)) ~ .combinations .size_5,
 .input:not(:has(.size ._6:checked)) ~ .combinations .size_6,
 .input:not(:has(.size ._7:checked)) ~ .combinations .size_7,
+.input:has(.size .x-sums:checked) ~ .combinations .entry,
 .input:has(.min-sum[data-gt~="3"]) ~ .combinations .sum_3,
 .input:has(.min-sum[data-gt~="4"], .max-sum[data-lt~="4"]) ~ .combinations .sum_4,
 .input:has(.min-sum[data-gt~="5"], .max-sum[data-lt~="5"]) ~ .combinations .sum_5,
@@ -68,6 +69,12 @@ input[type=checkbox],
 {
     display: none;
 }
+.input:has(.size .x-sums:checked) ~ .combinations .size_2 ._2,
+.input:has(.size .x-sums:checked) ~ .combinations .size_3 ._3,
+.input:has(.size .x-sums:checked) ~ .combinations .size_4 ._4,
+.input:has(.size .x-sums:checked) ~ .combinations .size_5 ._5,
+.input:has(.size .x-sums:checked) ~ .combinations .size_6 ._6,
+.input:has(.size .x-sums:checked) ~ .combinations .size_7 ._7,
 .input:has(.optional ._1:checked) ~ .combinations .entry._1:has(input:checked),
 .input:has(.optional ._2:checked) ~ .combinations .entry._2:has(input:checked),
 .input:has(.optional ._3:checked) ~ .combinations .entry._3:has(input:checked),
